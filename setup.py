@@ -17,7 +17,7 @@ with open('VERSION') as f:
 setup(
     name='krikzz-pub-archive-tool',
     version=version,
-    description='',
+    description='Tool for backing up: http://krikzz.com/pub/',
     long_description=long_desc,
     author='David Volm',
     author_email='david@volminator.com',
