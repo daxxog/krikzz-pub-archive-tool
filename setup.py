@@ -7,7 +7,7 @@ requirements = [
 ]
 
 
-with open('README.md') as f:
+with open('README.rst') as f:
     long_desc = f.read()
 
 with open('VERSION') as f:

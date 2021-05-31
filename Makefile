@@ -19,8 +19,16 @@ build: build-env
 	build-env/bin/python3 -m build
 
 
+.PHONY: readme-rst
+readme-rst: build-env
+	build-env/bin/m2r --overwrite README.md
+	git diff README.rst
+	git add README.rst
+	-git commit -m 'built README.rst from README.md'
+
+
 .PHONY: release
-release: build-env version-bump
+release: build-env readme-rst version-bump
 	make build
 	build-env/bin/python3 -m twine upload --repository pypi dist/*
 	git add VERSION

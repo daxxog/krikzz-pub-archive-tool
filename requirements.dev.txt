@@ -3,4 +3,5 @@ jedi
 pudb
 build
 twine
+m2r
 -r requirements.txt
