@@ -1,5 +1,7 @@
 /build/
 /dist/
 /env/
+/freeze-env/
+/build-env/
 *.egg-info
 __pycache__/

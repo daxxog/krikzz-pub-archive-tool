@@ -1,4 +1,6 @@
 neovim
 jedi
 pudb
+build
+twine
 -r requirements.txt
