@@ -22,7 +22,7 @@ build: build-env
 .PHONY: release
 release: build-env version-bump
 	make build
-	build-env/bin/python3 -m twine upload --repository krikzz-pub-archive-tool dist/*
+	build-env/bin/python3 -m twine upload --repository pypi dist/*
 	git add VERSION
 	git commit -m "built krikzz-pub-archive-tool@$$(cat VERSION)"
 	git push
